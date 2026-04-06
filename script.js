@@ -87,7 +87,7 @@ function updateCalculator() {
       <p><strong>${machine.name}</strong>, ${hours} óra, ${distance} km:</p>
       <p>üzemanyag kb. ${formatFt(fuelCost)} • amortizáció ${formatFt(amortizationCost)} • szerviz/kopó ${formatFt(serviceCost)}</p>
       <p>admin + logisztika ${formatFt(adminCost + travelCost)} • hétvégi gerincpótlék ${formatFt(weekendPainCost)}</p>
-      <p><strong>Önköltség:</strong> kb. ${formatFt(ownCost)} • <strong>maradó működési árrés:</strong> kb. ${formatFt(margin)}</p>
+      <p><strong>Önköltség:</strong> kb. ${formatFt(ownCost)} • <strong>adózás előtti árrés:</strong> kb. ${formatFt(margin)}</p>
     `;
   }
 }
