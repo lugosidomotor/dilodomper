@@ -271,6 +271,7 @@ p {
   font-size: 0.82rem;
   font-weight: 600;
   border: 1px solid var(--line);
+  margin-bottom: 14px;
 }
 
 /* ─── Buttons ─── */
@@ -432,17 +433,15 @@ p {
 .story-layout {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 0;
+  gap: 16px;
 }
 
 .story-layout > .frame:first-child {
-  border-radius: var(--radius-xl) var(--radius-xl) 0 0;
-  margin-bottom: -1px;
+  border-radius: var(--radius-xl) var(--radius-xl) var(--radius) var(--radius);
 }
 
 .story-layout > .frame:last-child {
-  border-radius: 0 0 var(--radius-xl) var(--radius-xl);
-  border-top: none;
+  border-radius: var(--radius) var(--radius) var(--radius-xl) var(--radius-xl);
 }
 
 .story-card,
@@ -454,7 +453,7 @@ p {
 .pricing-form,
 .process-card,
 .contact-layout {
-  padding: 28px;
+  padding: 32px;
 }
 
 .quote-card {
@@ -569,6 +568,11 @@ p {
 .reference-card {
   display: grid;
   grid-template-rows: auto 1fr;
+  gap: 0;
+}
+
+.reference-copy {
+  padding-top: 18px;
 }
 
 .reference-photo {
